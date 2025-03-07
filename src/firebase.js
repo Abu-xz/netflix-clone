@@ -12,13 +12,21 @@ import {
 } from 'firebase/firestore'
 import { toast } from "react-toastify";
 
+const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
+const authDomain = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
+const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID;
+const storageBucket = import.meta.env.VITE_FIREBASE_STORAGEBUCKET;
+const messagingSenderId = import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID;
+const appId = import.meta.env.VITE_FIREBASE_APPID;
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDto-Jie58vAESQObsggExSjtM4uDn5BaA",
-    authDomain: "neflix-clone-8f4ad.firebaseapp.com",
-    projectId: "neflix-clone-8f4ad",
-    storageBucket: "neflix-clone-8f4ad.firebasestorage.app",
-    messagingSenderId: "428714687340",
-    appId: "1:428714687340:web:7662e004234fe58fe75149"
+    apiKey: apiKey,
+    authDomain: authDomain,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    messagingSenderId: messagingSenderId,
+    appId: appId
 };
 
 // Initialize Firebase
